@@ -6,8 +6,9 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-	"test": "jest",
-	"lint": "eslint src**/"
+    "test": "jest",
+	"test:dev": "jest --watchAll",
+    "lint": "eslint src**/"
   },
   "devDependencies": {
     "@types/jest": "^28.1.3",
@@ -17,14 +18,16 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
     "jest": "^28.1.1",
+    "jest-environment-jsdom": "^28.1.1",
     "prettier": "^2.7.1",
+    "sass": "^1.53.0",
     "ts-jest": "^28.0.5",
     "typescript": "^4.5.4",
     "vite": "^2.9.9"
   },
   "jest": {
-	  "preset": "ts-jest",
-	  "testEnvironment": "jsdom",
-	  "rootDir": "src/"
+    "preset": "ts-jest",
+    "testEnvironment": "jsdom",
+    "rootDir": "src/"
   }
 }

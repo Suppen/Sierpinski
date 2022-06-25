@@ -4,10 +4,18 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Sierpinski Generator</title>
   </head>
   <body>
-    <div id="app"></div>
+	<p>
+	Generation of a Sierpinski Triangle by starting with the three corners of a triangle and a random point (I'm just picking a corner for simplicity). Then do the following:
+	</p>
+	<ul>
+		<li>Pick a random corner</li>
+		<li>Draw a dot at the point halfway between the current point and the picked corner</li>
+		<li>Repeat the process with the newly drawn in point</li>
+	</ul>
+	<canvas />
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
